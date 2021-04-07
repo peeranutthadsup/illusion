@@ -1,9 +1,9 @@
 from flask import Flask
-server = Flask(_name_)
+server = Flask(__name__)
 
 @server.route("/")
 def hello():
   return "Hello 5906021632071 peeranut thadsup from Server"
 
-if _name_ == "_main_":
+if __name__ == "__main__":
   server.run(host='0.0.0.0',port=80)
